@@ -24,5 +24,8 @@ public class AuthorMemLocalDataSource {
         return authorsMemStorage;
     }
 
+    public void save(Author author) {
+        authorsMemStorage.add(author);
+    }
 
 }
