@@ -2,7 +2,6 @@ package edu.iesam.features.albums.data;
 
 import edu.iesam.features.albums.domain.Album;
 
-
 import java.util.ArrayList;
 
 public class AlbumMemLocalDataSource {
@@ -33,5 +32,9 @@ public class AlbumMemLocalDataSource {
         }
 
         return instance;
+    }
+
+    public void save(Album album) {
+        albumsMemStorage.add(album);
     }
 }

@@ -3,6 +3,7 @@ package edu.iesam.features.albums.data;
 import edu.iesam.features.albums.domain.Album;
 import edu.iesam.features.albums.domain.AlbumRepository;
 
+
 import java.util.ArrayList;
 
 public class AlbumDataRepository implements AlbumRepository {
@@ -18,4 +19,8 @@ public class AlbumDataRepository implements AlbumRepository {
         return albumMemLocalDataSource.findAll();
     }
 
+    @Override
+    public void saveAlbum(Album album) {
+        albumMemLocalDataSource.save(album);
+    }
 }
