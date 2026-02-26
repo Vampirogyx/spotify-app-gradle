@@ -22,4 +22,9 @@ public class SongDataRepository implements SongRepository {
     public void saveSong(Song song) {
         songMemLocalDataSource.save(song);
     }
+
+    @Override
+    public void deleteSong(String songId) {
+        songMemLocalDataSource.delete(songId);
+    }
 }
