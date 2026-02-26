@@ -5,5 +5,5 @@ import java.util.ArrayList;
 public interface SongRepository {
 
     public ArrayList<Song> getSongs();
-
+    public void saveSong(Song song);
 }
