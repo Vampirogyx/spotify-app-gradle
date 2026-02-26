@@ -11,7 +11,7 @@ public class GetSongsUseCase {
     }
 
     public ArrayList<Song> execute() {
-        return songRepository.findAll();
+        return songRepository.getSongs();
     }
 
 }

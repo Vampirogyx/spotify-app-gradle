@@ -7,6 +7,13 @@ public class Song {
     private String author;
     private String duration;
 
+    public Song(String id, String title, String author, String duration) {
+        this.id = id;
+        this.title = title;
+        this.author = author;
+        this.duration = duration;
+    }
+
     public String getId() {
         return id;
     }
