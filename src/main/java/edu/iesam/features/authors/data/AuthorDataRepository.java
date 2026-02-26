@@ -23,5 +23,8 @@ public class AuthorDataRepository implements AuthorRepository {
         authorMemLocalDataSource.save(author);
     }
 
-
+    @Override
+    public void deleteAuthor(String authorId) {
+        authorMemLocalDataSource.delete(authorId);
+    }
 }
