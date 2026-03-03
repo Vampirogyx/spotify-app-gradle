@@ -4,7 +4,7 @@ public class DeleteSongsUseCase {
 
     private SongRepository songRepository;
 
-    public DeleteSongsUseCase(SongRepository authorRepository) {
+    public DeleteSongsUseCase(SongRepository songRepository) {
         this.songRepository = songRepository;
     }
 
